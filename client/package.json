@@ -12,6 +12,7 @@
     "core-js": "^3.6.5",
     "draggable": "^4.2.0",
     "vue": "^2.6.11",
+    "vue-carousel": "^0.18.0",
     "vue-image-compare": "^0.6.1",
     "vue2-dropzone": "^3.6.0"
   },
@@ -19,7 +20,7 @@
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "axios": "^0.18.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.11.0",
     "sass-loader": "^8.0.2",
     "vue-cli-plugin-axios": "~0.0.4",
     "vue-template-compiler": "^2.6.11"

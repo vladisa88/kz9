@@ -1,11 +1,16 @@
-FROM node:12.7-alpine AS build-env
+FROM node:14.9.0-alpine AS build-env
 
 WORKDIR /app
 
 COPY package.json yarn.lock ./
 
-# RUN npm install --loglevel=error
-RUN yarn install
+RUN apk add --no-cache g++ gcc libgcc libstdc++ linux-headers make python
+
+# Install packages
+RUN npm install --loglevel=error
+# RUN npm install --force --loglevel=error
+# RUN yarn add node-sass
+# RUN yarn install
 
 COPY . .
 
