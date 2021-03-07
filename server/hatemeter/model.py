@@ -1,5 +1,5 @@
 import sys
-#sys.path.append('/Users/vlad/projects/hatemeter/env/lib/python3.8/site-packages')
+# sys.path.append('/home/askatsevalov/repos/kz9-vlad/server/Neural/env/lib/python3.8/site-packages')
 
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = "2"
@@ -13,7 +13,8 @@ def all_work(req_group_link):
     group_link = req_group_link.split('/')[-1] #'dubki'
     num_comments = '100'
     num_posts = '10'
-    api_token = 'e8123e94ad03b22aafce171c3ac3c25e1febd83229f0c17dbe46583de5367cafff2509b57b7a4a4963660'
+    # api_token = 'e8123e94ad03b22aafce171c3ac3c25e1febd83229f0c17dbe46583de5367cafff2509b57b7a4a4963660' Это токен Владьев
+    api_token = 'a4537b3ec7d1869d56a020c630e46559932c2f1df1f4921bb3747690b9de32f41cbb4f1fbf0b08465bdd3' # Это токен Каца
     sample_request = 'https://api.vk.com/method/'
     get_group_by_link = f'utils.resolveScreenName?v=5.53&access_token={api_token}&'
     get_wall_entries = f'wall.get?v=5.53&access_token={api_token}&'
