@@ -18,7 +18,7 @@ WORKDIR /app
 COPY --from=build-env /app/publish .
 
 # Install python and requirements
-RUN apt-get update -y && apt-get install python3 python3-pip -y
+RUN apt-get update -y && apt-get install python3 python3-pip -y libjpeg-dev
 RUN pip3 install --default-timeout=100 -r ./Colorizer/requirements.txt
 
 ENTRYPOINT ["dotnet", "Server.dll"]
