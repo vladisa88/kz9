@@ -572,7 +572,7 @@ export default {
       }`;
     },
     urlValidate() {
-      return true ? this.url.indexOf('https://vk.com/groups/') != -1 : false
+      return true ? this.url.indexOf('https://vk.com/') != -1 : false
     },
     test() {
       console.log(this.aboutUsData)
