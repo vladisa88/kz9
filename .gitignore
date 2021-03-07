@@ -490,3 +490,6 @@ dist
 
 # pretrained model file
 *.pth
+
+env/
+model_4epochs/
